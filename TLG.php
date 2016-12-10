@@ -419,5 +419,19 @@ END;
 			file_put_contents($file, $log . $action, FILE_APPEND | LOCK_EX); 
 			
 	   }     
+	 
+		/*
+		 * $arr 
+		 * $v = index for search
+		 * $bool return value, if @ then return true or false
+		 */
+		function checkSet($arr='',$v='',$bool='@'){
+
+		    if($bool=='@')
+			isset($arr[$v]) ? $arr[$v] : false ;
+		    else
+		       isset($arr[$v]) ? $arr[$v] : $bool ; 
+		}
+
             
 }// Ending Class
