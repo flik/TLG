@@ -420,18 +420,19 @@ END;
 			
 	   }     
 	 
-		/*
-		 * $arr 
-		 * $v = index for search
-		 * $bool return value, if @ then return true or false
-		 */
-		function checkSet($arr='',$v='',$bool='@'){
+			
+/*
+ * $arr 
+ * $v = index for search
+ * $bool return value
+ */
+function checkSet($arr='',$v='',$bool='@'){
 
-		    if($bool=='@')
-			isset($arr[$v]) ? $arr[$v] : false ;
-		    else
-		       isset($arr[$v]) ? $arr[$v] : $bool ; 
-		}
+    if($bool=='@')
+        return isset($arr[$v]) ? true : false ;
+    else 
+       return isset($arr[$v]) ? $arr[$v] : '' ;
+} 
 
             
 }// Ending Class
