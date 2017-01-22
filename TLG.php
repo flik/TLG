@@ -368,7 +368,16 @@ END;
 		}
 	}
 	
-	public static function sendEmailHTML($data = array ){
+	 
+ public static function stripslashes_recursively(&$array) {
+	trigger_error('stripslashes_recursively is deprecated in 3.2', E_USER_DEPRECATED);
+	foreach($array as $k => $v) {
+		if(is_array($v)) stripslashes_recursively($array[$k]);
+		else $array[$k] = stripslashes($v);
+	}
+}
+	 
+	public static function sendEmailHTML($data  ){
 			if(empty($data))
 			return false;
 			
@@ -426,12 +435,12 @@ END;
  * $v = index for search
  * $bool return value
  */
-function checkSet($arr='',$v='',$bool='@'){
+function checkSet($arr='',$v='',$bool=''){
 
     if($bool=='@')
         return isset($arr[$v]) ? true : false ;
     else 
-       return isset($arr[$v]) ? $arr[$v] : '' ;
+       return isset($arr[$v]) ? $arr[$v] : $bool ;
 } 
 
             
