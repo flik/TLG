@@ -1,17 +1,17 @@
 
 
 ## Requirements
-*- PHP version: 7.2
-*- Node version: v8.11.1
-*- npm version: 5.6.0
+- PHP version: 7.2
+- Node version: v8.11.1
+- npm version: 5.6.0
 
 Apache rewrite module must be enable, PDO, Mysql extensions must be installed and enabled.
 
 You can check libraries detail in your composer.json file.
-- Reference links:
- *https://laravel.com/docs/5.6/authentication#included-authenticating
- *https://laravel.com/docs/5.6/passport#deploying-passport
- *http://laratrust.readthedocs.io/en/5.0/usage/concepts.html
+### Reference links:
+ - https://laravel.com/docs/5.6/authentication#included-authenticating
+ - https://laravel.com/docs/5.6/passport#deploying-passport
+ - http://laratrust.readthedocs.io/en/5.0/usage/concepts.html
 
 ## Installation
 
