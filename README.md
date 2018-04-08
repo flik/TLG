@@ -50,19 +50,22 @@ Before run the app, run unit test command from project folder.
 ```
 If tests are running perfectly without error then your project is ready.
 
+## Protip: 
+When visiting the endpoint using Postman, set the Header ```bash Accept: application/json ``` or Laravel Passport would never know it's an API client and thus redirect to a /login page for the web.
 
 ## API detail
+Just create an index.php and install  [Guzzle](https://github.com/guzzle/guzzle) by composer
 
 ```php
 <?php
-
+//index.php 
 require __DIR__.'/vendor/autoload.php';
 
 $client = new GuzzleHttp\Client;
 
 try {
 	
-    $response = $client->post('http://ams.local/oauth/token', [
+    $response = $client->post('http://tlg.local/oauth/token', [
         'form_params' => [
             'client_id' => 4,
             // The secret generated when you ran: php artisan passport:install
@@ -79,7 +82,7 @@ try {
 //echo $auth->access_token; exit;
 
 
-    $response = $client->get('http://ams.local/api/users', [
+    $response = $client->get('http://tlg.local/api/users', [
         'headers' => [
             'Authorization' => 'Bearer '.$auth->access_token,
         ]
