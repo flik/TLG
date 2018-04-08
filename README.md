@@ -58,7 +58,7 @@ $client = new GuzzleHttp\Client;
 
 try {
 	
-    $response = $client->post('http://dms.local/oauth/token', [
+    $response = $client->post('http://ams.local/oauth/token', [
         'form_params' => [
             'client_id' => 4,
             // The secret generated when you ran: php artisan passport:install
@@ -75,7 +75,7 @@ try {
 //echo $auth->access_token; exit;
 
 
-    $response = $client->get('http://dms.local/api/users', [
+    $response = $client->get('http://ams.local/api/users', [
         'headers' => [
             'Authorization' => 'Bearer '.$auth->access_token,
         ]
@@ -85,7 +85,7 @@ try {
 
     $usersList = "";
     foreach ($users as $user) {
-        $usersList .= "<li>{$user->name}".($todo->email ? '✅' : '')."</li>";
+        $usersList .= "<li>{$user->name}".($user->email ? '✅' : '')."</li>";
     }
 
     echo "<ul>{$usersList}</ul>";
