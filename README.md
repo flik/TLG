@@ -1,4 +1,5 @@
-
+#Tool Library Gadget (TLG)
+Just skelton to start api application with laravel
 
 ## Requirements
 - PHP version: 7.2
@@ -9,9 +10,9 @@ Apache rewrite module must be enable, PDO, Mysql extensions must be installed an
 
 You can check libraries detail in your composer.json file.
 ### Reference links:
- - https://laravel.com/docs/5.6/authentication#included-authenticating
- - https://laravel.com/docs/5.6/passport#deploying-passport
- - http://laratrust.readthedocs.io/en/5.0/usage/concepts.html
+ - https://laravel.com/docs/5.6/authentication#included-authenticating [Auth]
+ - https://laravel.com/docs/5.6/passport#deploying-passport [Token]
+ - http://laratrust.readthedocs.io/en/5.0/usage/concepts.html [ACL]
 
 ## Installation
 
@@ -51,8 +52,8 @@ Before run the app, run unit test command from project folder.
 If tests are running perfectly without error then your project is ready.
 
 ## Protip: 
-When visiting the endpoint using Postman, set the Header ```bash Accept: application/json ``` or Laravel Passport would never know it's an API client and thus redirect to a /login page for the web.
-
+When visiting the endpoint using Postman, set the Header ``` Accept: application/json ``` or Laravel Passport would never know it's an API client and thus redirect to a /login page for the web.
+- Here is documentation of some end points  [RESTED_API_DOCUMENTATION](https://github.com/flik/TLG/blob/master/RESTED_API_DOCUMENTATION.txt)
 ## API detail
 Just create an index.php and install  [Guzzle](https://github.com/guzzle/guzzle) by composer
 
