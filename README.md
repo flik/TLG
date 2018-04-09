@@ -7,7 +7,8 @@ Just skeleton to start api application with laravel.
 - npm version: 5.6.0
 
 Apache rewrite module must be enable, PDO, Mysql extensions must be installed and enabled.
-
+Create a Virtual host with the name tlg.local and point the directory TLG/public/
+Reference link for help: https://ourcodeworld.com/articles/read/584/how-to-configure-a-virtual-host-for-a-laravel-project-in-xampp-for-windows
 You can check libraries detail in your composer.json file.
 ### Reference links:
  - https://laravel.com/docs/5.6/authentication#included-authenticating [Auth]
