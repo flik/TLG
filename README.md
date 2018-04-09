@@ -50,7 +50,7 @@ php artisan key:generate
 ## Unit Testing 
 Start your XWAMP or LAMP servers.
 
-//all test are in ./dms/tests/unit
+//all test are in ./TLG/tests/unit
 
 Before run the app, run unit test command from project folder. 
 
