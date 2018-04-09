@@ -1,5 +1,5 @@
 #Tool Library Gadget (TLG)
-Just skelton to start api application with laravel
+Just skeleton to start api application with laravel.
 
 ## Requirements
 - PHP version: 7.2
@@ -11,8 +11,9 @@ Apache rewrite module must be enable, PDO, Mysql extensions must be installed an
 You can check libraries detail in your composer.json file.
 ### Reference links:
  - https://laravel.com/docs/5.6/authentication#included-authenticating [Auth]
- - https://laravel.com/docs/5.6/passport#deploying-passport [Token]
+ - https://laravel.com/docs/5.6/passport#deploying-passport [Token JWT]
  - http://laratrust.readthedocs.io/en/5.0/usage/concepts.html [ACL]
+ - https://laravel.com/docs/5.6/frontend [Vue]
 
 ## Installation
 
