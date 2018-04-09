@@ -28,7 +28,7 @@ Composer detail:
 https://getcomposer.org/
 
 ```bash
-npm install
+npm install & npm run dev
 
 ```
 
@@ -37,7 +37,15 @@ All migration files are there but I have installed some dummy data and configura
 So, You need to create new db and import sql file which is in db folder.
 
 Then modify .env file with database name, user and password.
- 
+
+Then run below all commands:
+
+```bash
+php artisan config:clear
+php artisan cache:clear 
+php artisan view:clear
+php artisan key:generate
+```
 
 ## Unit Testing 
 Start your XWAMP or LAMP servers.
