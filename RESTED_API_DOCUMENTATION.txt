@@ -24,7 +24,7 @@
       {
         "request": {
           "method": "GET",
-          "url": "http://api.local/api/v1/test",
+          "url": "http://tlg.local/api/v1/test",
           "headers": [
             {
               "name": "Content-Type",
@@ -37,7 +37,7 @@
       {
         "request": {
           "method": "POST",
-          "url": "http://api.local/oauth/token",
+          "url": "http://tlg.local/oauth/token",
           "headers": [
             {
               "name": "Content-Type",
