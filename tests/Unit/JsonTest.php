@@ -15,7 +15,7 @@ class JsonTest extends TestCase
     public function testJsonResponse()
     {
         $this->assertTrue(true);
-        $isJson = json_decode(file_get_contents('http://api.local/api/v1/test'), true);;
+        $isJson = json_decode(file_get_contents('http://tlg.local/api/v1/test'), true);;
 		
 		//return (json_last_error() === JSON_ERROR_NONE);
 		if ($isJson instanceof \stdClass || is_array($isJson)) {
