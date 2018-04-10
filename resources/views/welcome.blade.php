@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Document Managment System
+                    TLG
                 </div>
                 
                 <passport-clients></passport-clients>
